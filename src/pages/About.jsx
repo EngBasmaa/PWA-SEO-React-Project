@@ -89,16 +89,6 @@ export function About() {
               alt="Modern living room interior design"
               className="w-full h-auto object-cover rounded-lg shadow-xl"
             />
-            {/* Play Button Overlay */}
-            <div className="absolute bottom-6 right-6 bg-white bg-opacity-90 p-4 rounded-full shadow-lg cursor-pointer hover:scale-105 transition-transform duration-300">
-              <svg
-                className="w-8 h-8 text-gray-800"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path d="M8 5v14l11-7z" />
-              </svg>
-            </div>
           </div>
         </div>
       </header>

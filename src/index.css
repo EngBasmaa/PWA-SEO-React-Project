@@ -7,7 +7,7 @@
 :root {
   /* Main Theme Colors */
   --background-color: #fff;
-    --background-color-2: #ebe7e7;
+  --background-color-2: #ebe7e7;
     --background-color-2: #efecec;
     --text-primary: #2B2B64;
     /* لون النص الأساسي */
@@ -92,4 +92,7 @@ body {
 .heading {
   @apply text-3xl font-bold mb-4;
   color: var(--primary-color);
+}
+.gap-12 {
+  gap: calc(var(--spacing) * 12);
 }
