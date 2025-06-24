@@ -127,8 +127,7 @@ export function Home() {
         </div>
       </header>
 
-      {/* Main Content */}
-      <main>
+    
         {/* What We Do Section */}
         <section className="container mx-auto px-8 py-8 my-8 lg:py-24">
           <div className="flex flex-col py-8 px-8 lg:flex-row gap-12 lg:gap-24 items-start justify-between">
@@ -289,7 +288,7 @@ export function Home() {
             </figcaption>
           </figure>
         </section>
-      </main>
+    
     </>
   );
 }

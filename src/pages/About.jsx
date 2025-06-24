@@ -93,133 +93,131 @@ export function About() {
         </div>
       </header>
 
-      <main>
-        <section className="container mx-auto px-8 pt-8 mt-6 lg:py-24">
-          <div className="flex flex-col py-8 px-8 lg:flex-row gap-12 lg:gap-24 items-start justify-between">
-            {/* Left Section - Services List */}
-            <div className="w-1/2 py-8">
-              <h2 className="text-4xl md:text-5xl pb-8 lg:text-6xl font-semibold text-[var(--primary-color)] mb-12">
-                What we do
-              </h2>
-              <p className="w-1/2 py-4 leading-loose">
-                We expect living to be in an aesthetic form which is also an
-                attitude. We try to apply beautiful life experience to design
-                and to optimize the interaction between users and spaces.
-              </p>
+      <section className="container mx-auto px-8 pt-8 mt-6 lg:py-24">
+        <div className="flex flex-col py-8 px-8 lg:flex-row gap-12 lg:gap-24 items-start justify-between">
+          {/* Left Section - Services List */}
+          <div className="w-1/2 py-8">
+            <h2 className="text-4xl md:text-5xl pb-8 lg:text-6xl font-semibold text-[var(--primary-color)] mb-12">
+              What we do
+            </h2>
+            <p className="w-1/2 py-4 leading-loose">
+              We expect living to be in an aesthetic form which is also an
+              attitude. We try to apply beautiful life experience to design and
+              to optimize the interaction between users and spaces.
+            </p>
 
-              <p className="py-8 leading-loose">
-                <small>
-                  <strong>Daniel Moore & Julia Lopez</strong>
-                  <br />
-                  Co-Founder A.studio
-                </small>
-              </p>
+            <p className="py-8 leading-loose">
+              <small>
+                <strong>Daniel Moore & Julia Lopez</strong>
+                <br />
+                Co-Founder A.studio
+              </small>
+            </p>
+          </div>
+
+          {/* Right Section - Images */}
+          <div className="w-2/3 grid grid-cols-1 md:grid-cols-2 gap-16">
+            <div className="overflow-hidden rounded-lg shadow-xl">
+              <img
+                src="./about/person1.png"
+                alt="Modern kitchen interior"
+                className="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-500"
+              />
             </div>
-
-            {/* Right Section - Images */}
-            <div className="w-2/3 grid grid-cols-1 md:grid-cols-2 gap-16">
-              <div className="overflow-hidden rounded-lg shadow-xl">
-                <img
-                  src="./about/person1.png"
-                  alt="Modern kitchen interior"
-                  className="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-500"
-                />
-              </div>
-              <div className="overflow-hidden rounded-lg shadow-xl">
-                <img
-                  src="./about/person2.png"
-                  alt="Abstract architectural structure"
-                  className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500"
-                />
-              </div>
+            <div className="overflow-hidden rounded-lg shadow-xl">
+              <img
+                src="./about/person2.png"
+                alt="Abstract architectural structure"
+                className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500"
+              />
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* team */}
-        <section className="bg-white pb-8 mb-8 ">
-          <div className="container mx-auto px-4">
-            <h2 className="text-4xl py-12 md:text-5xl lg:text-6xl font-semibold text-gray-900 mb-12 text-center">
-              Meet Our Team
-            </h2>
+      {/* team */}
+      <section className="bg-white pb-8 mb-8 ">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl py-12 md:text-5xl lg:text-6xl font-semibold text-gray-900 mb-12 text-center">
+            Meet Our Team
+          </h2>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-1">
-              {members.map((member, index) =>
-                <div
-                  key={index}
-                  className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700 mx-auto transform hover:scale-[1.02] transition-transform duration-300"
-                >
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-1">
+            {members.map((member, index) =>
+              <div
+                key={index}
+                className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700 mx-auto transform hover:scale-[1.02] transition-transform duration-300"
+              >
+                <a href="#">
+                  <img
+                    className="rounded-t-lg w-full h-auto object-cover"
+                    src={member.image}
+                    alt={member.title}
+                  />
+                </a>
+                <div className="p-5">
                   <a href="#">
-                    <img
-                      className="rounded-t-lg w-full h-auto object-cover"
-                      src={member.image}
-                      alt={member.title}
-                    />
+                    <h5 className="mb-2 text-xl text-center tracking-tight text-gray-600 dark:text-white">
+                      {member.title}
+                    </h5>
                   </a>
-                  <div className="p-5">
-                    <a href="#">
-                      <h5 className="mb-2 text-xl text-center tracking-tight text-gray-600 dark:text-white">
-                        {member.title}
-                      </h5>
-                    </a>
-                    <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                      {member.category}
-                    </p>
-                  </div>
+                  <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                    {member.category}
+                  </p>
                 </div>
-              )}
-            </div>
+              </div>
+            )}
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* process */}
-        <div className="bg-gray-900 text-white  lg:py-8 p-8">
-          <div className="container p-8 mx-auto px-4">
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold mb-8 text-center">
-              Our Process
-            </h2>
+      {/* process */}
+      <div className="bg-gray-900 text-white  lg:py-8 p-8">
+        <div className="container p-8 mx-auto px-4">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold mb-8 text-center">
+            Our Process
+          </h2>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8 mt-8">
-              {processSteps.map((item, index) =>
-                <div
-                  key={index}
-                  className={`
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8 mt-8">
+            {processSteps.map((item, index) =>
+              <div
+                key={index}
+                className={`
                 ${item.type === "text"
                   ? "bg-gray-800 p-8 rounded-lg shadow-lg"
                   : "overflow-hidden rounded-lg shadow-lg"}
                 ${item.colSpan}
                 flex items-center justify-center
               `}
-                >
-                  {item.type === "text"
-                    ? <div>
-                        <h3 className="text-2xl font-bold mb-4 text-yellow-500">
-                          {item.title}
-                        </h3>
-                        <p className="text-gray-300 leading-relaxed">
-                          {item.description}
-                        </p>
-                      </div>
-                    : <img
-                        src={item.image}
-                        alt={item.alt}
-                        className="w-full h-full object-cover"
-                      />}
-                </div>
-              )}
-            </div>
-
-            <div className="text-center">
-              <Link
-                to="/contact"
-                className="bg-yellow-600 text-gray-900 text-lg px-8 py-4 rounded-md hover:bg-yellow-500 transition-colors duration-300 shadow-md inline-block"
               >
-                Contact us
-              </Link>
-            </div>
+                {item.type === "text"
+                  ? <div>
+                      <h3 className="text-2xl font-bold mb-4 text-yellow-500">
+                        {item.title}
+                      </h3>
+                      <p className="text-gray-300 leading-relaxed">
+                        {item.description}
+                      </p>
+                    </div>
+                  : <img
+                      src={item.image}
+                      alt={item.alt}
+                      className="w-full h-full object-cover"
+                    />}
+              </div>
+            )}
+          </div>
+
+          <div className="text-center">
+            <Link
+              to="/contact"
+              className="bg-yellow-600 text-gray-900 text-lg px-8 py-4 rounded-md hover:bg-yellow-500 transition-colors duration-300 shadow-md inline-block"
+            >
+              Contact us
+            </Link>
           </div>
         </div>
-      </main>
+      </div>
     </div>
   );
 }
