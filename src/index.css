@@ -1,0 +1,79 @@
+/* Tailwind core imports */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ========== Custom Variables ========== */
+:root {
+  /* Main Theme Colors */
+  --background-color: #fff;              /* خلفية فاتحة */
+  --text-primary: #2B2B64;              /* لون النص الأساسي */
+  --text-secondary: #4B4B90;            /* لون النص الثانوي (مشتق من الأساسي) */
+  --primary-color: #2B2B64;             /* بنفسجي غامق */
+  --primary-light: #44448A;             /* نسخة أفتح */
+  --primary-dark: #1B1B4A;              /* نسخة أغمق */
+  --accent-color: #f7ad36;              /* برتقالي */
+  --accent-light: #FFD58F;              /* نسخة أفتح */
+  --accent-dark: #D98B00;               /* نسخة أغمق */
+}
+
+/* ========== Base Global Styling ========== */
+body {
+  background-color: var(--background-color);
+  color: var(--text-primary);
+  font-family: 'Inter', sans-serif;
+}
+
+/* ========== Utility Classes ========== */
+.bg-background {
+  background-color: var(--background-color);
+}
+
+.text-theme {
+  color: var(--text-primary);
+}
+
+.text-secondary {
+  color: var(--text-secondary);
+}
+
+.bg-primary {
+  background-color: var(--primary-color);
+}
+
+.bg-primary-light {
+  background-color: var(--primary-light);
+}
+
+.bg-primary-dark {
+  background-color: var(--primary-dark);
+}
+
+.text-primary {
+  color: var(--primary-color);
+}
+
+/* Buttons */
+.btn-primary {
+  @apply px-4 py-2 rounded-md font-medium text-white;
+  background-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-dark);
+}
+
+.btn-accent {
+  @apply px-4 py-2 rounded-md font-medium text-white;
+  background-color: var(--accent-color);
+}
+
+.btn-accent:hover {
+  background-color: var(--accent-dark);
+}
+
+/* Headings */
+.heading {
+  @apply text-3xl font-bold mb-4;
+  color: var(--primary-color);
+}
