@@ -92,11 +92,11 @@ const testimonials = [
   return (
     <>
       {/* Header */}
-      <header className="bg-[var(--background-color)]">
-        <div className="container mx-auto py-16 lg:py-24">
-          <div className="px-8 py-8 flex flex-col lg:flex-row justify-center items-center gap-12">
+      <header className="bg-background2">
+        <div className="container mx-auto pt-8">
+          <div className="px-8 pt-8 flex flex-col lg:flex-row justify-center items-center gap-12">
             {/* Left Section - Text */}
-            <div className="px-8 lg:w-1/2 text-center lg:text-left">
+            <div className="px-8 pt-8  lg:w-1/2 text-center lg:text-left">
               <h1 className="px-8 text-4xl md:text-5xl lg:text-6xl font-semibold text-[var(--primary-color)] leading-tight mb-6">
                 Find your <br /> dream space
               </h1>
@@ -110,7 +110,7 @@ const testimonials = [
               </p>
           <Link
   to="/contact"
-className="mt-6 transition-colors duration-300 font-semibold text-white   shadow-md rounded-md  inline-block btn-primary px-8 py-3 hover:bg-[var(--primary-dark)] "
+className="transition-colors duration-300 font-semibold text-white   shadow-md rounded-md  inline-block btn-primary px-8 py-3 hover:bg-[var(--primary-dark)] "
 >
   View more
 </Link>
@@ -118,7 +118,7 @@ className="mt-6 transition-colors duration-300 font-semibold text-white   shadow
           </div>
 
           {/* Image Section */}
-          <div className="mt-16 relative">
+          <div className="mt-8 relative">
             <img
               src="./home/hero.png"
               alt="Modern living room interior design"
@@ -159,7 +159,7 @@ className="mt-6 transition-colors duration-300 font-semibold text-white   shadow
             </div>
 
             {/* Right Section - Images */}
-            <div className="lg:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="lg:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-16">
               <div className="overflow-hidden rounded-lg shadow-xl">
                 <img
                   src="./home/img1.png"
@@ -224,7 +224,7 @@ className="mt-6 transition-colors duration-300 font-semibold text-white   shadow
   </div>
 </section>
 
-{/* gallery */}
+{/* projects */}
 <div className="bg-white py-16 lg:py-24">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl py-12 md:text-5xl lg:text-6xl font-semibold text-gray-900 mb-12 text-center">
