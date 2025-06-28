@@ -6,7 +6,6 @@ import "flowbite";
 import "flowbite/dist/flowbite.css";
 
 import { BrowserRouter } from "react-router-dom";
-import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -16,4 +15,3 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   </React.StrictMode>
 );
 
-serviceWorkerRegistration.register();
