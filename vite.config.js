@@ -19,7 +19,9 @@ export default defineConfig({
         runtimeCaching: [
           {
             // ✅ تحديد الصفحات اللي هتتخزن أوفلاين
-            urlPattern: /^https:\/\/pwa-test-on-react-project-e9h7\.vercel\.app\/(home|about|contact)/,
+            // urlPattern: /^https:\/\/pwa-test-on-react-project-e9h7\.vercel\.app\/(home|about|contact)/,
+            urlPattern: /^\/(home|about|contact)?$/,
+
             handler: "NetworkFirst",
             options: {
               cacheName: "custom-pages-cache",
